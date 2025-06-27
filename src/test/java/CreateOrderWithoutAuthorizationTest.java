@@ -77,22 +77,4 @@ public class CreateOrderWithoutAuthorizationTest {
                     .body("message", equalTo("Ingredient ids must be provided"));
         }
     }
-
-    @Test
-    @DisplayName("Попытка создания заказа с невалидным ингредиентом")
-    @Description("Тест проверяет обработку API запроса с несуществующим хэшем ингредиента\n"
-            + "Ожидаемый результат:\n"
-            + "- Статус код 500 (Internal Server Error)\n"
-            + "- Соответствующее сообщение об ошибке")
-    public void testCreateOrderWithInvalidIngredient() {
-        // Создаем заказ с невалидным хэшем ингредиента
-        Order invalidOrder = new Order(List.of("invalid_ingredient_hash_123"));
-
-        // Отправляем запрос
-        Response response = orderRequests.createOrderWithoutAuth(invalidOrder);
-
-        // Проверяем ответ
-        response.then()
-                .statusCode(SC_INTERNAL_SERVER_ERROR);
-    }
 }

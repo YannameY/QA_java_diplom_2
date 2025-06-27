@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: GetOrderTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.162 s - in GetOrderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.063 s - in GetOrderTest

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="LoginTest" time="4.57" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="LoginTest" time="4.408" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Amazon Corretto\jdk11.0.27_6\bin"/>
-    <property name="sun.java.command" value="C:\Users\JVJAZO~1\AppData\Local\Temp\surefire12527194648576445353\surefirebooter13250594063944467938.jar C:\Users\jvjazovikov\AppData\Local\Temp\surefire12527194648576445353 2025-06-27T14-39-14_447-jvmRun1 surefire16448182409009357893tmp surefire_01012844717589583597tmp"/>
+    <property name="sun.java.command" value="C:\Users\JVJAZO~1\AppData\Local\Temp\surefire16777129072896504296\surefirebooter10069919112382971249.jar C:\Users\jvjazovikov\AppData\Local\Temp\surefire16777129072896504296 2025-06-27T19-07-55_099-jvmRun1 surefire5896446412455484143tmp surefire_0682859892516876636tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\jvjazovikov\Downloads\QA_java_diplom_2\QA_java_diplom_2\target\test-classes;C:\Users\jvjazovikov\Downloads\QA_java_diplom_2\QA_java_diplom_2\target\classes;C:\Users\jvjazovikov\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\jvjazovikov\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\jvjazovikov\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\jvjazovikov\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\jvjazovikov\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\jvjazovikov\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\jvjazovikov\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\jvjazovikov\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\jvjazovikov\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\jvjazovikov\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\jvjazovikov\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\jvjazovikov\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\jvjazovikov\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\jvjazovikov\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\jvjazovikov\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\jvjazovikov\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\jvjazovikov\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\jvjazovikov\.m2\repository\io\qameta\allure\allure-junit4\2.25.0\allure-junit4-2.25.0.jar;C:\Users\jvjazovikov\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\jvjazovikov\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;C:\Users\jvjazovikov\.m2\repository\io\qameta\allure\allure-test-filter\2.25.0\allure-test-filter-2.25.0.jar;C:\Users\jvjazovikov\.m2\repository\io\qameta\allure\allure-rest-assured\2.15.0\allure-rest-assured-2.15.0.jar;C:\Users\jvjazovikov\.m2\repository\io\qameta\allure\allure-attachments\2.15.0\allure-attachments-2.15.0.jar;C:\Users\jvjazovikov\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\jvjazovikov\.m2\repository\com\google\code\gson\gson\2.8.9\gson-2.8.9.jar;C:\Users\jvjazovikov\.m2\repository\org\slf4j\slf4j-nop\1.7.36\slf4j-nop-1.7.36.jar;C:\Users\jvjazovikov\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\jvjazovikov\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\jvjazovikov\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\jvjazovikov\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\jvjazovikov\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\jvjazovikov\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\JVJAZO~1\AppData\Local\Temp\surefire12527194648576445353\surefirebooter13250594063944467938.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\JVJAZO~1\AppData\Local\Temp\surefire16777129072896504296\surefirebooter10069919112382971249.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.27+6-LTS"/>
@@ -63,9 +63,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="loginUser[0]" classname="LoginTest" time="1.021"/>
-  <testcase name="loginUser[1]" classname="LoginTest" time="0.981"/>
-  <testcase name="loginUser[2]" classname="LoginTest" time="0.94"/>
-  <testcase name="loginUser[3]" classname="LoginTest" time="0.799"/>
-  <testcase name="loginUser[4]" classname="LoginTest" time="0.815"/>
+  <testcase name="loginUser[0]" classname="LoginTest" time="0.969"/>
+  <testcase name="loginUser[1]" classname="LoginTest" time="0.899"/>
+  <testcase name="loginUser[2]" classname="LoginTest" time="0.864"/>
+  <testcase name="loginUser[3]" classname="LoginTest" time="0.835"/>
+  <testcase name="loginUser[4]" classname="LoginTest" time="0.807"/>
 </testsuite>
