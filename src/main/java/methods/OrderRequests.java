@@ -16,11 +16,20 @@ public class OrderRequests {
                 .get(INGREDIENTS);
     }
 
-    @Step("Создать заказ")
-    public Response createOrder(Order order) {
+    @Step("Создать заказ с авторизацией")
+    public Response createOrder(Order order, String accessToken) {
         return given()
                 .header("Content-type", "application/json")
-                .and()
+                .header("Authorization", accessToken)
+                .body(order)
+                .when()
+                .post(ORDERS);
+    }
+
+    @Step("Создать заказ без авторизации")
+    public Response createOrderWithoutAuth(Order order) {
+        return given()
+                .header("Content-type", "application/json")
                 .body(order)
                 .when()
                 .post(ORDERS);

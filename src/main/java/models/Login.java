@@ -1,14 +1,15 @@
 package models;
 
-public class Login {
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
+@Data
+
+@AllArgsConstructor
+public class Login {
     private String email;
     private String password;
 
-    public Login(String email, String password) {
-        this.email = email;
-        this.password = password;
-    }
 
     public Login() { // Конструктор класса Login без параметров
     }

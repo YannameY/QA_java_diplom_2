@@ -50,30 +50,38 @@ public class LoginTest {
                 {"риван@яндекс.com", null, 401, false, 200, "email or password are incorrect"},
                 // Отсутствие пароля
                 {faker.internet().emailAddress(), "ponpon", 401, false, 200, "email or password are incorrect"}
-                // Несуществующий email
         };
     }
 
     @Before
-    public void setUp()  {
+    public void setUp() {
         RestAssured.baseURI = BURGERS_URL;
         user = new User("риван@яндекс.com", "UyCn3u6k4xWe!4k", "Ksenia");
         userRequests = new UserRequests();
+        // Создаем пользователя перед каждым тестом
+        Response responseCreate = userRequests.createUser(user);
+        if (responseCreate.statusCode() == 200) {
+            accessToken = responseCreate.then().log().all().extract().path("accessToken");
+        } else {
+            accessToken = null;
+        }
         login = new Login(email, password);
     }
 
     @Test
     @DisplayName("Проверка логина пользователя")
-    public void loginUser(){
-        Response responseCreate = userRequests.createUser(user);
-        accessToken = responseCreate.then().log().all().statusCode(createStatusCode).extract().path("accessToken");
+    public void loginUser() {
         Response responseLogin = userRequests.loginUser(login);
-        responseLogin.then().log().all().statusCode(statusCode).body("success", equalTo(success)).body("message", equalTo(message));
+        responseLogin.then()
+                .log().all()
+                .statusCode(statusCode)
+                .body("success", equalTo(success))
+                .body("message", equalTo(message));
     }
 
     @After
     public void deleteUser() {
-        if (createStatusCode == 200) {
+        if (accessToken != null) {
             Response responseDelete = userRequests.deleteUser(accessToken);
             responseDelete.then().log().all().statusCode(202).body("success", equalTo(true));
         }
